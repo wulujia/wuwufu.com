@@ -1,0 +1,11 @@
+export/
+public/
+resources/
+scripts/__pycache__/
+.hugo_build.lock
+.DS_Store
+
+# wp2hugo 工具和转换中间产物
+wp2hugo
+wp2hugo.tar.gz
+wp2hugo-output/

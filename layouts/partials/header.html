@@ -1,0 +1,26 @@
+{{- $isHome := .IsHome }}
+<header id="masthead" class="site-header {{ if $isHome }}has-hero{{ end }}">
+  <div class="custom-header">
+    <div class="custom-header-media">
+      <img src="/images/header-bg.jpg" alt="" class="wp-custom-header-img">
+    </div>
+    <div class="site-branding">
+      <a href="{{ "" | absLangURL }}" class="custom-logo-link" rel="home">
+        <img class="custom-logo" src="/images/logo.png" alt="{{ site.Title }}" width="250" height="250">
+      </a>
+      <div class="site-branding-text">
+        <h1 class="site-title"><a href="{{ "" | absLangURL }}" rel="home">{{ site.Title }}</a></h1>
+        {{- with site.Params.description }}
+        <p class="site-description">{{ . }}</p>
+        {{- end }}
+      </div>
+    </div>
+  </div>
+  <nav id="site-navigation" class="main-navigation">
+    <ul class="nav-menu">
+      {{- range site.Menus.main }}
+      <li><a href="{{ .URL | absLangURL }}">{{ .Name }}</a></li>
+      {{- end }}
+    </ul>
+  </nav>
+</header>

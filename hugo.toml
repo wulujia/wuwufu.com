@@ -1,0 +1,62 @@
+baseURL = "https://wuwufu.com/"
+languageCode = "zh-CN"
+defaultContentLanguage = "zh-cn"
+title = "五福在家 自得其乐"
+theme = "PaperMod"
+hasCJKLanguage = true
+[pagination]
+  pagerSize = 10
+
+enableRobotsTXT = true
+buildDrafts = false
+buildFuture = false
+buildExpired = false
+
+[params]
+  env = "production"
+  description = "时间不能倒流 但回忆的感觉尚有"
+  author = "五福"
+  defaultTheme = "light"
+  ShowReadingTime = false
+  ShowShareButtons = false
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = false
+  ShowAllPagesInArchive = true
+  disableSpecial1stPost = true
+  displayFullLangName = false
+  ShowToc = false
+
+  [params.homeInfoParams]
+    Title = "时间不能倒流 但回忆的感觉尚有"
+    Content = ""
+
+[permalinks]
+  [permalinks.page]
+    posts = "/:year/:month/:day/:slug/"
+
+[taxonomies]
+  category = "categories"
+
+[[menu.main]]
+  name = "首页"
+  url = "/"
+  weight = 1
+
+[[menu.main]]
+  name = "分类"
+  url = "/categories/"
+  weight = 2
+
+[[menu.main]]
+  name = "归档"
+  url = "/archives/"
+  weight = 3
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]

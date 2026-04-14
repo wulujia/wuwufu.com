@@ -1,0 +1,70 @@
+{{- define "main" }}
+
+{{- if not .IsHome | and .Title }}
+<header class="page-header">
+  <h1>{{ .Title }}</h1>
+  {{- if .Description }}
+  <div class="post-description">{{ .Description | markdownify }}</div>
+  {{- end }}
+</header>
+{{- end }}
+
+{{- if .Content }}
+<div class="md-content">{{ .Content }}</div>
+{{- end }}
+
+{{- $pages := union .RegularPages .Sections }}
+{{- if .IsHome }}
+{{- $pages = where site.RegularPages "Type" "in" site.Params.mainSections }}
+{{- end }}
+
+{{- $paginator := .Paginate $pages }}
+
+{{- range $index, $page := $paginator.Pages }}
+{{- $content := .Content }}
+{{- $imgCount := len (findRE `<img[^>]*>` $content) }}
+{{- $videoCount := len (findRE `<video[^>]*>` $content) }}
+{{- $mediaCount := add $imgCount $videoCount }}
+
+<article class="post-entry {{ if le $mediaCount 2 }}post-entry-full{{ else }}post-entry-excerpt{{ end }}">
+  <header class="entry-header">
+    <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+  </header>
+
+  <footer class="entry-footer">
+    {{- partial "post_meta.html" . -}}
+  </footer>
+
+  {{- if le $mediaCount 2 }}
+  {{/* 媒体 ≤ 2 个：直接呈现完整内容（但截断评论区）*/}}
+  <div class="entry-content full">
+    {{- $main := $content -}}
+    {{- if findRE `<div class="static-comments">` $main -}}
+      {{- $main = index (split $main `<div class="static-comments">`) 0 -}}
+    {{- end -}}
+    {{- $main | safeHTML -}}
+  </div>
+  {{- else }}
+  {{/* 媒体 > 2 个：显示摘要 */}}
+  <div class="entry-content">
+    <p>{{ .Summary | plainify | htmlUnescape }}{{ if .Truncated }}...{{ end }}</p>
+    <p class="read-more"><a href="{{ .Permalink }}">阅读全文 →</a></p>
+  </div>
+  {{- end }}
+</article>
+{{- end }}
+
+{{- if gt $paginator.TotalPages 1 }}
+<footer class="page-footer">
+  <nav class="pagination">
+    {{- if $paginator.HasPrev }}
+    <a class="prev" href="{{ $paginator.Prev.URL | absURL }}">« 上一页</a>
+    {{- end }}
+    {{- if $paginator.HasNext }}
+    <a class="next" href="{{ $paginator.Next.URL | absURL }}">下一页 »</a>
+    {{- end }}
+  </nav>
+</footer>
+{{- end }}
+
+{{- end }}
