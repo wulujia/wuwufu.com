@@ -9,3 +9,7 @@ scripts/__pycache__/
 wp2hugo
 wp2hugo.tar.gz
 wp2hugo-output/
+
+# ffmpeg 2-pass 编码日志
+x265_2pass.log
+x265_2pass.log.*
