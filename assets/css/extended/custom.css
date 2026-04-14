@@ -309,15 +309,21 @@ body > header.header {
 }
 
 .pagination a {
-  padding: 0.6em 1.2em;
-  border: 1px solid var(--ts-border);
-  color: var(--ts-text);
-  text-decoration: none;
-  font-weight: 600;
+  padding: 0.55em 1.2em !important;
+  border: 1px solid var(--ts-border) !important;
+  border-radius: 3px !important;
+  background: #fff !important;
+  color: var(--ts-text) !important;
+  text-decoration: none !important;
+  font-weight: 600 !important;
+  font-size: 0.9em !important;
+  line-height: 1.4 !important;
+  transition: background 0.15s ease, border-color 0.15s ease;
 }
 
 .pagination a:hover {
-  background: #fafafa;
+  background: #fafafa !important;
+  border-color: #bbb !important;
 }
 
 /* ========== 文章正文 ========== */
@@ -461,21 +467,6 @@ body > header.header {
 
 /* ========== 分类/归档页 ========== */
 
-.archive-posts {
-  max-width: 740px;
-  margin: 0 auto;
-}
-
-.archive-year, .archive-month {
-  margin-top: 2em;
-  margin-bottom: 1em;
-}
-
-.archive-entry {
-  border-bottom: 1px solid var(--ts-border);
-  padding: 0.8em 0;
-}
-
 .terms-tags a,
 .taxonomy a {
   display: inline-block;
@@ -486,6 +477,156 @@ body > header.header {
   border-radius: 3px;
   color: var(--ts-text);
   font-size: 0.9em;
+}
+
+/* ========== 归档页（紧凑形态）========== */
+
+.archives-overview {
+  margin: 1.5em 0 2em;
+  padding: 1em 1.2em;
+  background: #fafafa;
+  border: 1px solid var(--ts-border);
+  border-radius: 3px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.2em;
+  font-family: "SF Mono", "Monaco", "Menlo", Consolas, monospace;
+  font-size: 0.85em;
+}
+
+.archives-overview .year-bar {
+  display: grid;
+  grid-template-columns: 50px 1fr 40px;
+  align-items: baseline;
+  gap: 1em;
+  padding: 0.1em 0;
+  color: var(--ts-text);
+  text-decoration: none !important;
+  line-height: 1.4;
+}
+
+.archives-overview .year-bar:hover {
+  color: #c0392b;
+}
+
+.archives-overview .year-label {
+  font-weight: 700;
+  color: var(--ts-text);
+}
+
+.archives-overview .year-blocks {
+  color: #c0392b;
+  letter-spacing: -1px;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.archives-overview .year-count {
+  color: var(--ts-text-light);
+  text-align: right;
+}
+
+.year-section {
+  margin: 1.8em 0 0;
+  padding: 0;
+  border: none;
+}
+
+.year-section summary {
+  list-style: none;
+  cursor: pointer;
+  padding: 0.4em 0;
+  border-bottom: 1px solid var(--ts-border);
+  user-select: none;
+}
+
+.year-section summary::-webkit-details-marker {
+  display: none;
+}
+
+.year-section summary::before {
+  content: "▾";
+  display: inline-block;
+  margin-right: 0.5em;
+  color: var(--ts-text-light);
+  transition: transform 0.15s ease;
+  font-size: 0.8em;
+}
+
+.year-section:not([open]) summary::before {
+  transform: rotate(-90deg);
+}
+
+.year-section .year-heading {
+  font-size: 1.4em;
+  font-weight: 700;
+  color: var(--ts-link);
+}
+
+.year-section .post-count {
+  margin-left: 0.4em;
+  color: var(--ts-text-light);
+  font-size: 0.9em;
+}
+
+.posts-list {
+  list-style: none;
+  margin: 0.5em 0 0;
+  padding: 0;
+}
+
+.posts-list li {
+  display: flex;
+  align-items: baseline;
+  gap: 0.8em;
+  padding: 0.25em 0;
+  line-height: 1.5;
+  font-size: 0.95em;
+}
+
+.posts-list .post-date {
+  flex-shrink: 0;
+  width: 3.5em;
+  font-family: "SF Mono", "Monaco", "Menlo", Consolas, monospace;
+  font-size: 0.85em;
+  color: var(--ts-text-light);
+}
+
+.posts-list a {
+  color: var(--ts-text);
+  text-decoration: none;
+  flex: 1;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.posts-list a:hover {
+  color: #c0392b;
+  text-decoration: underline;
+}
+
+.posts-list .post-cat {
+  flex-shrink: 0;
+  color: var(--ts-text-light);
+  font-size: 0.8em;
+}
+
+@media (max-width: 768px) {
+  .archives-overview .year-bar {
+    grid-template-columns: 45px 1fr 35px;
+    gap: 0.7em;
+  }
+
+  .posts-list li {
+    flex-wrap: wrap;
+    font-size: 0.9em;
+  }
+
+  .posts-list .post-cat {
+    display: none;
+  }
 }
 
 /* ========== 移动端 ========== */

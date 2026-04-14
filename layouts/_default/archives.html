@@ -1,0 +1,65 @@
+{{- define "main" }}
+
+<header class="page-header">
+  <h1>{{ .Title }}</h1>
+</header>
+
+{{/* 按年份分组 */}}
+{{- $pages := where site.RegularPages "Type" "in" site.Params.mainSections }}
+{{- $byYear := dict }}
+{{- range $pages }}
+  {{- $y := .Date.Format "2006" }}
+  {{- $existing := index $byYear $y | default (slice) }}
+  {{- $byYear = merge $byYear (dict $y ($existing | append .)) }}
+{{- end }}
+
+{{- $years := slice }}
+{{- range $y, $posts := $byYear }}
+  {{- $years = $years | append $y }}
+{{- end }}
+{{- $years = sort $years "value" "desc" }}
+
+{{/* 顶部年份概览条 */}}
+<div class="archives-overview">
+  {{- range $years }}
+    {{- $y := . }}
+    {{- $posts := index $byYear $y }}
+    {{- $count := len $posts }}
+    {{- $blocks := div $count 25 | int }}
+    {{- if lt $blocks 1 }}{{- $blocks = 1 }}{{- end }}
+    {{- if gt $blocks 10 }}{{- $blocks = 10 }}{{- end }}
+    <a href="#year-{{ $y }}" class="year-bar" title="{{ $y }}: {{ $count }} 篇">
+      <span class="year-label">{{ $y }}</span>
+      <span class="year-blocks">{{- range (seq $blocks) }}█{{- end }}</span>
+      <span class="year-count">{{ $count }}</span>
+    </a>
+  {{- end }}
+</div>
+
+{{/* 按年份分组的文章列表 */}}
+{{- range $years }}
+  {{- $y := . }}
+  {{- $posts := index $byYear $y }}
+  {{- $sorted := sort $posts "Date" "desc" }}
+<details id="year-{{ $y }}" class="year-section" open>
+  <summary>
+    <span class="year-heading">{{ $y }}</span>
+    <span class="post-count">({{ len $posts }})</span>
+  </summary>
+  <ul class="posts-list">
+    {{- range $sorted }}
+    <li>
+      <span class="post-date">{{ .Date.Format "01-02" }}</span>
+      <a href="{{ .Permalink }}">{{ .Title | default "(无标题)" }}</a>
+      {{- with .Params.categories }}
+        {{- range first 1 . }}
+      <span class="post-cat">#{{ . }}</span>
+        {{- end }}
+      {{- end }}
+    </li>
+    {{- end }}
+  </ul>
+</details>
+{{- end }}
+
+{{- end }}
