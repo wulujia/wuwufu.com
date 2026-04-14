@@ -53,6 +53,11 @@ buildExpired = false
   url = "/archives/"
   weight = 3
 
+[[menu.main]]
+  name = "评论"
+  url = "/comments/"
+  weight = 4
+
 [markup]
   [markup.goldmark]
     [markup.goldmark.renderer]

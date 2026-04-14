@@ -449,6 +449,63 @@ body > header.header {
   margin: 0.3em 0;
 }
 
+/* ========== 评论汇总页 ========== */
+
+.comments-archive {
+  margin: 1.5em 0;
+}
+
+.comment-item {
+  margin-bottom: 1em;
+  padding: 0.9em 1.1em;
+  background-color: #fafaf5;
+  border-left: 3px solid #ddd;
+  border-radius: 2px;
+}
+
+.comment-item-head {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5em 0.9em;
+  align-items: baseline;
+  margin-bottom: 0.5em;
+  font-size: 0.88em;
+}
+
+.comment-item-author {
+  font-weight: 700;
+  color: var(--ts-link);
+}
+
+.comment-item-date {
+  color: var(--ts-text-light);
+  font-family: "SF Mono", "Monaco", "Menlo", Consolas, monospace;
+  font-size: 0.9em;
+}
+
+.comment-item-on {
+  color: var(--ts-text-light);
+}
+
+.comment-item-on a {
+  color: #c0392b;
+  text-decoration: none;
+}
+
+.comment-item-on a:hover {
+  text-decoration: underline;
+}
+
+.comment-item-body {
+  font-size: 0.95em;
+  line-height: 1.7;
+  color: var(--ts-text);
+}
+
+.comment-item-body p {
+  margin: 0.3em 0;
+}
+
 /* ========== Footer ========== */
 
 .footer {
