@@ -3,7 +3,7 @@ title: "用AI豆包让照片动起来"
 date: "2025-09-10T09:01:52+00:00"
 url: "/2025/09/10/用ai豆包让照片动起来/"
 categories:
-  - uncategorized
+  - 亦思亦录
 author: wufuzaijia
 post_id: 4126
 ---
