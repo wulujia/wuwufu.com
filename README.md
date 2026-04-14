@@ -26,7 +26,6 @@ hugo server
    - Framework preset: `Hugo`
    - Build command: `hugo --gc --minify`
    - Build output directory: `public`
-   - Environment variable: `HUGO_VERSION=0.155.1`
 4. 保存并部署
 
 ## 目录结构
