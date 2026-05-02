@@ -1,11 +1,15 @@
 ---
 title: "转发wulujia微信：黑客大会"
+description: "《转发wulujia微信：黑客大会》是五福在家 自得其乐的一篇归档文章，发布于2018-09-18，分类为亦思亦录、他山之石、微信。"
 date: "2018-09-18T09:03:24+00:00"
+lastmod: "2018-09-18T09:03:24+00:00"
 url: "/2018/09/18/转发wulujia微信：黑客大会/"
 categories:
   - 亦思亦录
   - 他山之石
   - 微信
+images:
+  - "/wp-content/uploads/2024/05/742c0-e9bb91e5aea2e5a4a7e4bc9a.jpg"
 author: wulujia
 post_id: 2922
 ---

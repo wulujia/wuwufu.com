@@ -1,6 +1,8 @@
 ---
 title: "评论"
+description: "五福在家 自得其乐的历史评论归档页面。"
 url: "/comments/"
+robotsNoIndex: true
 ---
 
 共 589 条评论。
@@ -5730,11 +5732,11 @@ AA总应该也有两手吧.没露出来而已<br />
   <div class="comment-item-body"><p>[引用这个评论]   淡如雏菊  2006-12-13 评论</p>
 <p>呵呵，Ｎ久没上来了．忙着给老哥网上在线考试，忙着自己的工作，忙着这个忙着那个，忙着乱七八糟的各种事．．<br />
 五福叔，今天再给您传点好笑照片哦～～<br />
-<a href="http://www.i170.com/attachment/att_3/jidi/_90E8DC30-8C78-42D8-B15C-B6E2FD546751.jpg"><img src="https://i0.wp.com/www.i170.com/attachment/att_3/jidi/_90E8DC30-8C78-42D8-B15C-B6E2FD546751.jpg" style="max-width:100%;" /></a><br />
-<a href="http://www.i170.com/attachment/att_3/jidi/_63EA791B-E84F-497D-BA1D-D13900B2F8B4.jpg"><img src="https://i0.wp.com/www.i170.com/attachment/att_3/jidi/_63EA791B-E84F-497D-BA1D-D13900B2F8B4.jpg" style="max-width:100%;" /></a><br />
-<a href="http://www.i170.com/attachment/att_3/jidi/_04544472-394C-4D28-8D3E-8A6DAC15B2CB.jpg"><img src="https://i0.wp.com/www.i170.com/attachment/att_3/jidi/_04544472-394C-4D28-8D3E-8A6DAC15B2CB.jpg" style="max-width:100%;" /></a><br />
-<a href="http://www.i170.com/attachment/att_3/jidi/_0211E5FD-3433-45BB-8A8B-0885E825A0FE.jpg"><img src="https://i0.wp.com/www.i170.com/attachment/att_3/jidi/_0211E5FD-3433-45BB-8A8B-0885E825A0FE.jpg" style="max-width:100%;" /></a><br />
-<a href="http://www.i170.com/attachment/att_3/jidi/_4528B204-6A0B-4D7B-91EE-6F200598DA15.jpg"><img src="https://i0.wp.com/www.i170.com/attachment/att_3/jidi/_4528B204-6A0B-4D7B-91EE-6F200598DA15.jpg" style="max-width:100%;" /></a><br />
+<a href="http://www.i170.com/attachment/att_3/jidi/_90E8DC30-8C78-42D8-B15C-B6E2FD546751.jpg"><img alt="评论" src="https://i0.wp.com/www.i170.com/attachment/att_3/jidi/_90E8DC30-8C78-42D8-B15C-B6E2FD546751.jpg" style="max-width:100%;" /></a><br />
+<a href="http://www.i170.com/attachment/att_3/jidi/_63EA791B-E84F-497D-BA1D-D13900B2F8B4.jpg"><img alt="评论" src="https://i0.wp.com/www.i170.com/attachment/att_3/jidi/_63EA791B-E84F-497D-BA1D-D13900B2F8B4.jpg" style="max-width:100%;" /></a><br />
+<a href="http://www.i170.com/attachment/att_3/jidi/_04544472-394C-4D28-8D3E-8A6DAC15B2CB.jpg"><img alt="评论" src="https://i0.wp.com/www.i170.com/attachment/att_3/jidi/_04544472-394C-4D28-8D3E-8A6DAC15B2CB.jpg" style="max-width:100%;" /></a><br />
+<a href="http://www.i170.com/attachment/att_3/jidi/_0211E5FD-3433-45BB-8A8B-0885E825A0FE.jpg"><img alt="评论" src="https://i0.wp.com/www.i170.com/attachment/att_3/jidi/_0211E5FD-3433-45BB-8A8B-0885E825A0FE.jpg" style="max-width:100%;" /></a><br />
+<a href="http://www.i170.com/attachment/att_3/jidi/_4528B204-6A0B-4D7B-91EE-6F200598DA15.jpg"><img alt="评论" src="https://i0.wp.com/www.i170.com/attachment/att_3/jidi/_4528B204-6A0B-4D7B-91EE-6F200598DA15.jpg" style="max-width:100%;" /></a><br />
 <a href="http://www.i170.com/attachment/att_3/jidi/_AB3468D2-E880-4651-872D-56A279806A64.jp" rel="nofollow ugc">http://www.i170.com/attachment/att_3/jidi/_AB3468D2-E880-4651-872D-56A279806A64.jp</a></p></div>
 </div>
 
@@ -5745,10 +5747,10 @@ AA总应该也有两手吧.没露出来而已<br />
     <span class="comment-item-on">评论了 <a href="/2006/09/12/406/">《复lxh信》</a></span>
   </div>
   <div class="comment-item-body"><p>[引用这个评论]   淡如雏菊  2006-12-13 评论<br />
-<a href="http://www.i170.com/attachment/att_3/jidi/_0BCCC5F2-C762-4B34-9D2D-0553C3092B7B.jpg"><img src="https://i0.wp.com/www.i170.com/attachment/att_3/jidi/_0BCCC5F2-C762-4B34-9D2D-0553C3092B7B.jpg" style="max-width:100%;" /></a><br />
-<a href="http://www.i170.com/attachment/att_3/jidi/_807613BB-E4FD-4677-A375-C953C0CB89CB.jpg"><img src="https://i0.wp.com/www.i170.com/attachment/att_3/jidi/_807613BB-E4FD-4677-A375-C953C0CB89CB.jpg" style="max-width:100%;" /></a><br />
-<a href="http://www.i170.com/attachment/att_3/jidi/_635108AA-E59C-4118-A9CC-50ABBE36702A.jpg"><img src="https://i0.wp.com/www.i170.com/attachment/att_3/jidi/_635108AA-E59C-4118-A9CC-50ABBE36702A.jpg" style="max-width:100%;" /></a><br />
-<a href="http://www.i170.com/attachment/att_3/jidi/_15C2AAEC-887E-4805-A6C3-29753705B8AD.jpg"><img src="https://i0.wp.com/www.i170.com/attachment/att_3/jidi/_15C2AAEC-887E-4805-A6C3-29753705B8AD.jpg" style="max-width:100%;" /></a><br />
+<a href="http://www.i170.com/attachment/att_3/jidi/_0BCCC5F2-C762-4B34-9D2D-0553C3092B7B.jpg"><img alt="评论" src="https://i0.wp.com/www.i170.com/attachment/att_3/jidi/_0BCCC5F2-C762-4B34-9D2D-0553C3092B7B.jpg" style="max-width:100%;" /></a><br />
+<a href="http://www.i170.com/attachment/att_3/jidi/_807613BB-E4FD-4677-A375-C953C0CB89CB.jpg"><img alt="评论" src="https://i0.wp.com/www.i170.com/attachment/att_3/jidi/_807613BB-E4FD-4677-A375-C953C0CB89CB.jpg" style="max-width:100%;" /></a><br />
+<a href="http://www.i170.com/attachment/att_3/jidi/_635108AA-E59C-4118-A9CC-50ABBE36702A.jpg"><img alt="评论" src="https://i0.wp.com/www.i170.com/attachment/att_3/jidi/_635108AA-E59C-4118-A9CC-50ABBE36702A.jpg" style="max-width:100%;" /></a><br />
+<a href="http://www.i170.com/attachment/att_3/jidi/_15C2AAEC-887E-4805-A6C3-29753705B8AD.jpg"><img alt="评论" src="https://i0.wp.com/www.i170.com/attachment/att_3/jidi/_15C2AAEC-887E-4805-A6C3-29753705B8AD.jpg" style="max-width:100%;" /></a><br />
 呼～～终于搞定！哈哈～～偶还是满佩服自己的，活到老学到老真的是一点也没错，稍微偷点懒就同时代脱节了．这不，学着如何将照片链结上传都花了好久．呵呵～～照片不大好，五福叔就凑合着看看笑笑吧，赶明儿和同学出去玩再多拍点照片回来．（现在看看自己还是满有上镜感的，哈哈，纯属自嘲）</p></div>
 </div>
 

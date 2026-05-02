@@ -16,6 +16,7 @@ buildExpired = false
   env = "production"
   description = "时间不能倒流 但回忆的感觉尚有"
   author = "五福"
+  mainSections = ["posts"]
   defaultTheme = "light"
   ShowReadingTime = false
   ShowShareButtons = false
@@ -64,4 +65,23 @@ buildExpired = false
       unsafe = true
 
 [outputs]
-  home = ["HTML", "RSS", "JSON"]
+  home = ["HTML", "RSS", "JSON", "ROBOTS", "LLMS", "LLMSFULL"]
+
+[outputFormats]
+  [outputFormats.LLMS]
+    mediaType = "text/plain"
+    baseName = "llms"
+    isPlainText = true
+    notAlternative = true
+    root = true
+
+  [outputFormats.LLMSFULL]
+    mediaType = "text/plain"
+    baseName = "llms-full"
+    isPlainText = true
+    notAlternative = true
+    root = true
+
+[mediaTypes]
+  [mediaTypes."text/plain"]
+    suffixes = ["txt"]

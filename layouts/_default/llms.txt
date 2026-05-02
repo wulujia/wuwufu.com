@@ -1,0 +1,33 @@
+# {{ site.Title }}
+
+> {{ site.Params.description }}
+
+This file lists the indexable public pages on {{ site.BaseURL }} for language models and search crawlers.
+
+## Core Pages
+
+- [首页]({{ site.Home.Permalink }}): {{ partial "seo_description.html" site.Home }}
+{{- with site.GetPage "/archives" }}
+{{- if not .Params.robotsNoIndex }}
+- [归档]({{ .Permalink }}): {{ partial "seo_description.html" . }}
+{{- end }}
+{{- end }}
+{{- with site.GetPage "/categories" }}
+{{- if not .Params.robotsNoIndex }}
+- [分类]({{ .Permalink }}): {{ partial "seo_description.html" . }}
+{{- end }}
+{{- end }}
+
+## Categories
+
+{{- range sort (where site.Taxonomies.categories "Page.Params.robotsNoIndex" "ne" true) "Page.Title" }}
+- [{{ .Page.Title }}]({{ .Page.Permalink }}): {{ len .Pages }} 篇文章
+{{- end }}
+
+## Posts
+
+{{- range sort (where site.RegularPages "Params.robotsNoIndex" "ne" true) "Date" "desc" }}
+{{- if ne .RelPermalink "/comments/" }}
+- [{{ .Title }}]({{ .Permalink }}): {{ partial "seo_description.html" . }}
+{{- end }}
+{{- end }}

@@ -4,7 +4,7 @@
 
 - 标语：时间不能倒流 但回忆的感觉尚有
 - 原站：https://wuwufu.com（原 WordPress.com 托管）
-- 786 篇文章（2005-2025），11 个分类，591 条评论
+- 785 篇文章（2005-2025），11 个分类，591 条评论
 
 ## 本地开发
 
@@ -30,13 +30,27 @@ hugo server
 
 ## 目录结构
 
-- `content/posts/` — 786 篇文章 Markdown
+- `content/posts/` — 785 篇文章 Markdown
 - `static/wp-content/uploads/` — 图片和视频（原 WordPress 路径结构）
 - `static/images/` — 站点 logo、header 背景图
 - `themes/PaperMod/` — Hugo 主题（git submodule）
 - `layouts/` — 主题覆盖（自定义 header、list 模板）
 - `assets/css/extended/custom.css` — Twenty Seventeen 风格定制
-- `scripts/` — 迁移脚本（一次性使用，不影响站点）
+- `scripts/` — 迁移脚本与 SEO/GEO 维护脚本
+
+## SEO/GEO 维护
+
+```bash
+# 批量补齐文章 description / lastmod / images，以及 raw img/video 属性
+node scripts/seo_enrich_content.mjs
+
+# 本地完整构建验证
+hugo --gc --minify
+```
+
+- 构建会生成 `/robots.txt`、`/sitemap.xml`、`/llms.txt`、`/llms-full.txt`。
+- `/comments/` 和 `/posts/` 是低价值聚合页，保留访问，但 `noindex, follow`，且不进 sitemap。
+- Cloudflare 如果启用 Managed robots.txt，会在站点 robots 前插入 AI crawler 的 `Disallow`；做 GEO 时需在 Cloudflare 里同步放行。
 
 ## 迁移记录
 

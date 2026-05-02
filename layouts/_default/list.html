@@ -21,12 +21,9 @@
 {{- $paginator := .Paginate $pages }}
 
 {{- range $index, $page := $paginator.Pages }}
-{{- $content := .Content }}
-{{- $imgCount := len (findRE `<img[^>]*>` $content) }}
-{{- $videoCount := len (findRE `<video[^>]*>` $content) }}
-{{- $mediaCount := add $imgCount $videoCount }}
+{{- $desc := partial "seo_description.html" . }}
 
-<article class="post-entry {{ if le $mediaCount 2 }}post-entry-full{{ else }}post-entry-excerpt{{ end }}">
+<article class="post-entry post-entry-excerpt">
   <header class="entry-header">
     <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
   </header>
@@ -35,22 +32,10 @@
     {{- partial "post_meta.html" . -}}
   </footer>
 
-  {{- if le $mediaCount 2 }}
-  {{/* 媒体 ≤ 2 个：直接呈现完整内容（但截断评论区）*/}}
-  <div class="entry-content full">
-    {{- $main := $content -}}
-    {{- if findRE `<div class="static-comments">` $main -}}
-      {{- $main = index (split $main `<div class="static-comments">`) 0 -}}
-    {{- end -}}
-    {{- $main | safeHTML -}}
-  </div>
-  {{- else }}
-  {{/* 媒体 > 2 个：显示摘要 */}}
   <div class="entry-content">
-    <p>{{ .Summary | plainify | htmlUnescape }}{{ if .Truncated }}...{{ end }}</p>
+    <p>{{ $desc }}</p>
     <p class="read-more"><a href="{{ .Permalink }}">阅读全文 →</a></p>
   </div>
-  {{- end }}
 </article>
 {{- end }}
 

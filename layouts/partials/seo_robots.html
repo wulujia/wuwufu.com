@@ -1,0 +1,5 @@
+{{- $robots := "index, follow" -}}
+{{- if or .Params.robotsNoIndex (eq .Kind "404") -}}
+  {{- $robots = "noindex, follow" -}}
+{{- end -}}
+{{- $robots -}}

@@ -9,7 +9,11 @@
         <img class="custom-logo" src="/images/logo.png" alt="{{ site.Title }}" width="250" height="250">
       </a>
       <div class="site-branding-text">
+        {{- if $isHome }}
         <h1 class="site-title"><a href="{{ "" | absLangURL }}" rel="home">{{ site.Title }}</a></h1>
+        {{- else }}
+        <p class="site-title"><a href="{{ "" | absLangURL }}" rel="home">{{ site.Title }}</a></p>
+        {{- end }}
         {{- with site.Params.description }}
         <p class="site-description">{{ . }}</p>
         {{- end }}

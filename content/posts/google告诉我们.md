@@ -1,9 +1,13 @@
 ---
 title: "Google告诉我们"
+description: "在使用谷歌进行搜索时，它会告诉你找到多少个相关结果，对比分析一下，很有意思： 我vs你：2.9亿对66亿。在我心中，你 永远 比我重要。 爱vs恨：30亿对3800万。爱才是存在的乐趣，恨只会让 自己 痛苦。 穷人vs富人：7800万对5800万。无论世界怎么发展，穷人永远比富人多。 好人vs坏人：1.78亿"
 date: "2012-08-06T01:29:06+00:00"
+lastmod: "2012-08-06T01:29:06+00:00"
 url: "/2012/08/06/google告诉我们/"
 categories:
   - 剪报&文摘
+images:
+  - "/wp-content/uploads/2024/05/06199-googlee5918ae8af89e280a6e280a6e68bbce59bbea.jpg"
 author: wulujia
 post_id: 2118
 ---

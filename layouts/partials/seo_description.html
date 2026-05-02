@@ -1,0 +1,31 @@
+{{- $desc := "" -}}
+{{- with .Description -}}
+  {{- $desc = . | plainify | htmlUnescape | replaceRE "\\s+" " " | replaceRE "^\\s+|\\s+$" "" -}}
+{{- end -}}
+{{- if not $desc -}}
+  {{- with .Summary -}}
+    {{- $desc = . | plainify | htmlUnescape | replaceRE "\\s+" " " | replaceRE "^\\s+|\\s+$" "" -}}
+  {{- end -}}
+{{- end -}}
+{{- if not $desc -}}
+  {{- if .IsPage -}}
+    {{- $date := "" -}}
+    {{- if not .Date.IsZero -}}{{- $date = .Date.Format "2006-01-02" -}}{{- end -}}
+    {{- $cats := "" -}}
+    {{- with .Params.categories -}}{{- $cats = delimit . "、" -}}{{- end -}}
+    {{- if and $date $cats -}}
+      {{- $desc = printf "《%s》是%s的一篇归档文章，发布于%s，分类为%s。" .Title site.Title $date $cats -}}
+    {{- else if $date -}}
+      {{- $desc = printf "《%s》是%s的一篇归档文章，发布于%s。" .Title site.Title $date -}}
+    {{- else -}}
+      {{- $desc = printf "《%s》是%s的一篇归档文章。" .Title site.Title -}}
+    {{- end -}}
+  {{- else if .IsSection -}}
+    {{- $desc = printf "%s的%s页面，收录相关归档文章与分类入口。" site.Title .Title -}}
+  {{- else if .IsHome -}}
+    {{- $desc = site.Params.description -}}
+  {{- else -}}
+    {{- $desc = site.Params.description -}}
+  {{- end -}}
+{{- end -}}
+{{- $desc | truncate 160 -}}

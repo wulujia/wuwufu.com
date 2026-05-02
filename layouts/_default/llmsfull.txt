@@ -1,0 +1,29 @@
+# {{ site.Title }} Full Text
+
+{{ site.Params.description }}
+
+{{- range sort (where site.RegularPages "Params.robotsNoIndex" "ne" true) "Date" "desc" }}
+{{- if ne .RelPermalink "/comments/" }}
+
+## {{ .Title }}
+
+URL: {{ .Permalink }}
+{{- if not .Date.IsZero }}
+Published: {{ .Date.Format "2006-01-02" }}
+{{- end }}
+{{- if not .Lastmod.IsZero }}
+Updated: {{ .Lastmod.Format "2006-01-02" }}
+{{- end }}
+{{- with .Params.categories }}
+Categories: {{ delimit . "、" }}
+{{- end }}
+
+Summary: {{ partial "seo_description.html" . }}
+
+{{- $content := .Content -}}
+{{- if findRE `<div class="static-comments">` $content -}}
+  {{- $content = index (split $content `<div class="static-comments">`) 0 -}}
+{{- end }}
+{{ $content | plainify | htmlUnescape | replaceRE "\\s+" " " | replaceRE "^\\s+|\\s+$" "" }}
+{{- end }}
+{{- end }}
