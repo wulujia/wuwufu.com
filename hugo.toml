@@ -59,6 +59,11 @@ buildExpired = false
   url = "/comments/"
   weight = 4
 
+[[menu.main]]
+  name = "友链"
+  url = "/links/"
+  weight = 5
+
 [markup]
   [markup.goldmark]
     [markup.goldmark.renderer]
