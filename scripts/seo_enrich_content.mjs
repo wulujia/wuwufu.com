@@ -5,6 +5,8 @@ import path from "node:path";
 
 const root = process.cwd();
 const postsDir = path.join(root, "content", "posts");
+const legacyArticlePhrase = "是五福在家 自得其乐的一篇" + "归档" + "文章";
+const publishedArticlePhrase = "是五福在家 自得其乐发表的文章";
 
 function parseFrontMatter(text) {
   if (!text.startsWith("---\n")) return null;
@@ -97,7 +99,7 @@ function sentenceFor(frontMatter, body) {
   if (text.length >= 35) return text.slice(0, 155);
   const categoryText = categories.length ? `，分类为${categories.join("、")}` : "";
   const dateText = date ? `，发布于${date}` : "";
-  return `《${title}》是五福在家 自得其乐的一篇归档文章${dateText}${categoryText}。`;
+  return `《${title}》${publishedArticlePhrase}${dateText}${categoryText}。`;
 }
 
 function insertAfter(lines, anchorKey, newLines) {
@@ -113,7 +115,16 @@ function enrichFrontMatter(frontMatter, body) {
   const lines = frontMatter.split("\n");
   let changed = false;
 
-  if (!hasKey(frontMatter, "description")) {
+  const descriptionIndex = lines.findIndex((line) => line.startsWith("description:"));
+  if (descriptionIndex >= 0 && lines[descriptionIndex].includes(legacyArticlePhrase)) {
+    lines[descriptionIndex] = lines[descriptionIndex].replaceAll(
+      legacyArticlePhrase,
+      publishedArticlePhrase,
+    );
+    changed = true;
+  }
+
+  if (descriptionIndex === -1) {
     insertAfter(lines, "title", [`description: ${yamlString(sentenceFor(frontMatter, body))}`]);
     changed = true;
   }

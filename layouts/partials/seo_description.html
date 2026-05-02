@@ -14,14 +14,14 @@
     {{- $cats := "" -}}
     {{- with .Params.categories -}}{{- $cats = delimit . "、" -}}{{- end -}}
     {{- if and $date $cats -}}
-      {{- $desc = printf "《%s》是%s的一篇归档文章，发布于%s，分类为%s。" .Title site.Title $date $cats -}}
+      {{- $desc = printf "《%s》是%s发表的文章，发布于%s，分类为%s。" .Title site.Title $date $cats -}}
     {{- else if $date -}}
-      {{- $desc = printf "《%s》是%s的一篇归档文章，发布于%s。" .Title site.Title $date -}}
+      {{- $desc = printf "《%s》是%s发表的文章，发布于%s。" .Title site.Title $date -}}
     {{- else -}}
-      {{- $desc = printf "《%s》是%s的一篇归档文章。" .Title site.Title -}}
+      {{- $desc = printf "《%s》是%s发表的文章。" .Title site.Title -}}
     {{- end -}}
   {{- else if .IsSection -}}
-    {{- $desc = printf "%s的%s页面，收录相关归档文章与分类入口。" site.Title .Title -}}
+    {{- $desc = printf "%s的%s页面，收录相关文章与分类入口。" site.Title .Title -}}
   {{- else if .IsHome -}}
     {{- $desc = site.Params.description -}}
   {{- else -}}
