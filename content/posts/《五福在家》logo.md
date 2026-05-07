@@ -11,5 +11,6 @@ images:
   - "/wp-content/uploads/2024/05/00876-e3808ae4ba94e7a68fe59ca8e5aeb6e3808blogo.jpg"
 author: wulujia
 post_id: 2551
+aliases: ["/《五福在家》logo/"]
 ---
 **20** **140824** **微信：** **昨天在玩《五福在家》网站二维码时，嵌入了以前的签名，心想如果** **“** **五福在家** **”** **能做成** **LOGO** **就好了，猛然就有了一个灵感** **——** **随手在废纸上涂鸦** **——** **在这涂鸦之中选得两张……** **我想，这个** **LOGO** **篆刻成印章可能也不错吧……** [![](/wp-content/uploads/2024/05/00876-e3808ae4ba94e7a68fe59ca8e5aeb6e3808blogo.jpg)](/wp-content/uploads/2024/05/00876-e3808ae4ba94e7a68fe59ca8e5aeb6e3808blogo.jpg)

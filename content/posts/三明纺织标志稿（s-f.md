@@ -10,6 +10,7 @@ images:
   - "/wp-content/uploads/2024/05/4b638-sanfang.jpg"
 author: wulujia
 post_id: 287
+aliases: ["/三明纺织标志稿（s-f/"]
 ---
 三纺——S.F.
 金鹿，金鸟是其名牌产品。

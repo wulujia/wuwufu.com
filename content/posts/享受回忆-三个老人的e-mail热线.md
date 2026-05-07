@@ -8,6 +8,7 @@ categories:
   - 亦思亦录
 author: wulujia
 post_id: 387
+aliases: ["/享受回忆-三个老人的e-mail热线/"]
 ---
 享受回忆——三个老人的e-mail热线
  我和LLK是高中同学，和CHT是小学初中同学，而我们三人同为初中同学。

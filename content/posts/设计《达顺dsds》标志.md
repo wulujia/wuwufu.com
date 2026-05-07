@@ -10,6 +10,7 @@ images:
   - "/wp-content/uploads/2024/05/e09ee-01.jpg"
 author: wulujia
 post_id: 607
+aliases: ["/设计《达顺dsds》标志/"]
 ---
 近日，受朋友之托，设计了个标志——达顺(DS/ds),专营葡萄酒。
 

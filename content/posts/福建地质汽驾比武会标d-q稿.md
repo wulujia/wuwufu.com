@@ -10,5 +10,6 @@ images:
   - "/wp-content/uploads/2024/05/2c58f-big_dq.jpg"
 author: wulujia
 post_id: 216
+aliases: ["/福建地质汽驾比武会标d-q稿/"]
 ---
 [![](/wp-content/uploads/2024/05/2c58f-big_dq.jpg)](/wp-content/uploads/2024/05/2c58f-big_dq.jpg)

@@ -12,5 +12,6 @@ images:
   - "/wp-content/uploads/2024/05/b2a4c-e9b281e58aa0e69687e7aba05-1.jpg"
 author: wulujia
 post_id: 2947
+aliases: ["/转发wulujia文章《文人有傲骨，君子不固穷》/"]
 ---
 **微信 20160930： 转发wulujia文章《文人有傲骨，君子不固穷》** [![](/wp-content/uploads/2024/05/b2a4c-e9b281e58aa0e69687e7aba05-1.jpg)](/wp-content/uploads/2024/05/b2a4c-e9b281e58aa0e69687e7aba05-1.jpg)

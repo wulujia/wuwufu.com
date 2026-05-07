@@ -10,6 +10,7 @@ images:
   - "/wp-content/uploads/2024/05/9e262-t-x1.jpg"
 author: wulujia
 post_id: 1098
+aliases: ["/t恤风采吴七章-合德轩/"]
 ---
 盛夏时节话T恤。
 什么是T恤？

@@ -10,6 +10,7 @@ images:
   - "/wp-content/uploads/2024/05/2c459-big_hede.jpg"
 author: wulujia
 post_id: 228
+aliases: ["/合德巷徽标-h-d/"]
 ---
 我家住在合德巷……那里还保留着先祖父手书的一幅对联：
 合乎中庸堪作则

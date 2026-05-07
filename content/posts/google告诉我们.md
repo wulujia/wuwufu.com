@@ -10,6 +10,7 @@ images:
   - "/wp-content/uploads/2024/05/06199-googlee5918ae8af89e280a6e280a6e68bbce59bbea.jpg"
 author: wulujia
 post_id: 2118
+aliases: ["/google告诉我们/"]
 ---
 [![](/wp-content/uploads/2024/05/06199-googlee5918ae8af89e280a6e280a6e68bbce59bbea.jpg)](/wp-content/uploads/2024/05/06199-googlee5918ae8af89e280a6e280a6e68bbce59bbea.jpg)
 

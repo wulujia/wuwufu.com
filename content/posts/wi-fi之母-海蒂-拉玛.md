@@ -12,5 +12,6 @@ images:
   - "/wp-content/uploads/2024/05/abaaf-wi-fie4b98be6af8de28094e28094e6b5b7e89282-e68b89e78e9b.jpg"
 author: wulujia
 post_id: 2990
+aliases: ["/wi-fi之母-海蒂-拉玛/"]
 ---
 **微信20160706：Wi-Fi之母——海蒂-拉玛** **[![](/wp-content/uploads/2024/05/abaaf-wi-fie4b98be6af8de28094e28094e6b5b7e89282-e68b89e78e9b.jpg)](/wp-content/uploads/2024/05/abaaf-wi-fie4b98be6af8de28094e28094e6b5b7e89282-e68b89e78e9b.jpg)**

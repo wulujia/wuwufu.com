@@ -9,6 +9,7 @@ categories:
   - 我的诗
 author: wulujia
 post_id: 114
+aliases: ["/t铁之歌/"]
 ---
 钢光印象：T铁之歌八首
 

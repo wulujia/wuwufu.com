@@ -12,5 +12,6 @@ images:
   - "/wp-content/uploads/2024/05/742c0-e9bb91e5aea2e5a4a7e4bc9a.jpg"
 author: wulujia
 post_id: 2922
+aliases: ["/转发wulujia微信：黑客大会/"]
 ---
 **微信 20160827： 转发wulujia今天的微信：黑客大会** [![](/wp-content/uploads/2024/05/742c0-e9bb91e5aea2e5a4a7e4bc9a.jpg)](/wp-content/uploads/2024/05/742c0-e9bb91e5aea2e5a4a7e4bc9a.jpg)

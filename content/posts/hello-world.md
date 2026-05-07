@@ -8,6 +8,7 @@ categories:
   - 他山之石
 author: wulujia
 post_id: 3529
+aliases: ["/hello-world/"]
 ---
 世界上最遥远的距离
 不是   生与死

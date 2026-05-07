@@ -10,6 +10,7 @@ images:
   - "https://55fu.wordpress.com/wp-content/uploads/2025/09/img_3395-1.jpg?w=1019"
 author: wufuzaijia
 post_id: 4126
+aliases: ["/用ai豆包让照片动起来/"]
 ---
 ![](https://55fu.wordpress.com/wp-content/uploads/2025/09/img_3395-1.jpg?w=1019)
 

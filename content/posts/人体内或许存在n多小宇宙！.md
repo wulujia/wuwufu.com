@@ -12,6 +12,7 @@ images:
   - "/wp-content/uploads/2024/05/6e969-e4babae4bd93e58685e280a6e280a6.jpg"
 author: wulujia
 post_id: 3116
+aliases: ["/人体内或许存在n多小宇宙！/"]
 ---
 **2017-2-9微信：人体内或许存在N多小宇宙！里面住着N多外星人！**
 

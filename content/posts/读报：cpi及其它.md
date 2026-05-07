@@ -10,6 +10,7 @@ images:
   - "/wp-content/uploads/2024/05/723ca-cpi1.jpg"
 author: wulujia
 post_id: 1688
+aliases: ["/读报：cpi及其它/"]
 ---
 泉州晚报12.12报道：
 国家统计局昨日发布数据显示， **11月份，居民消费价格（CPI）同比上涨5.1%**，创下2008年8月以来的28个月新高，环比上涨1.1%。
