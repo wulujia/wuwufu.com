@@ -44,7 +44,10 @@ hugo server
 # 批量补齐文章 description / lastmod / images，以及 raw img/video 属性
 node scripts/seo_enrich_content.mjs
 
-# 生成 WordPress 老 URL → Hugo 新 URL 的 301/410 映射（写入 static/_redirects）
+# 给每篇文章 frontmatter 加 WP 老 slug 的 aliases（一次性，幂等）
+node scripts/add_wp_aliases.mjs
+
+# 生成 _redirects（处理 aliases 覆盖不到的老链接：feed/category/archive 等）
 node scripts/generate_redirects.mjs
 
 # 本地完整构建验证
@@ -54,7 +57,9 @@ hugo --gc --minify
 - 构建会生成 `/robots.txt`、`/sitemap.xml`、`/llms.txt`、`/llms-full.txt`。
 - `/comments/` 和 `/posts/` 是低价值聚合页，保留访问，但 `noindex, follow`，且不进 sitemap。
 - Cloudflare 如果启用 Managed robots.txt，会在站点 robots 前插入 AI crawler 的 `Disallow`；做 GEO 时需在 Cloudflare 里同步放行。
-- `static/_redirects` 接住 WP 老链接：扁平 slug `/{slug}/` → `/{year}/{month}/{day}/{slug}/`，`/category/X/` → `/categories/X/`，`/wp-includes/*` 等基建路径返 410；GSC 报新的 `/slug-N/` 重复后缀时，在脚本 HEADER 的 "Manual overrides" 段加一行。
+- **WP 老链接接管分两层**（CF Pages 免费版 `_redirects` 限 100 条规则，785 篇文章超额）：
+  1. **每篇文章 frontmatter 的 `aliases:`** 接 `/<old-slug>/` → 文章 permalink。Hugo 把每条 alias 渲染成独立的 `<old-slug>/index.html`（meta-refresh），不占 `_redirects` 配额。重新导入或 slug 结构变化后跑一次 `add_wp_aliases.mjs`。
+  2. **`static/_redirects`** 处理 alias 覆盖不到的：`/feed/`、`/category/X/`、`/2018/10/` 月度归档、`/钢光纪念相册-3/` WP 重复后缀。共 ~16 条规则，远低于 100 上限。GSC 又报新的归档或重复后缀时，编辑 `scripts/generate_redirects.mjs` 的 BODY 加一行重跑。
 
 ## 迁移记录
 
