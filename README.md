@@ -44,6 +44,9 @@ hugo server
 # 批量补齐文章 description / lastmod / images，以及 raw img/video 属性
 node scripts/seo_enrich_content.mjs
 
+# 生成 WordPress 老 URL → Hugo 新 URL 的 301/410 映射（写入 static/_redirects）
+node scripts/generate_redirects.mjs
+
 # 本地完整构建验证
 hugo --gc --minify
 ```
@@ -51,6 +54,7 @@ hugo --gc --minify
 - 构建会生成 `/robots.txt`、`/sitemap.xml`、`/llms.txt`、`/llms-full.txt`。
 - `/comments/` 和 `/posts/` 是低价值聚合页，保留访问，但 `noindex, follow`，且不进 sitemap。
 - Cloudflare 如果启用 Managed robots.txt，会在站点 robots 前插入 AI crawler 的 `Disallow`；做 GEO 时需在 Cloudflare 里同步放行。
+- `static/_redirects` 接住 WP 老链接：扁平 slug `/{slug}/` → `/{year}/{month}/{day}/{slug}/`，`/category/X/` → `/categories/X/`，`/wp-includes/*` 等基建路径返 410；GSC 报新的 `/slug-N/` 重复后缀时，在脚本 HEADER 的 "Manual overrides" 段加一行。
 
 ## 迁移记录
 
