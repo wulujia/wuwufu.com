@@ -1,0 +1,175 @@
+# 《五福在家》选篇与结构。file 为 content/posts/ 下的文件名（不含 .md）。
+# tier: A 必选（默认），B 备选。mode: prose | verse | auto（默认 auto，按栏目判断）。
+book:
+  title: 五福在家
+  subtitle: 时间不能倒流 但回忆的感觉尚有
+  author: 吴五福
+  signature: /book/images/external/2025_08_img_2636-1.jpg
+
+front:
+  - {file: 愿这可爱的自留地伴我同行，永远！, title: 自序}
+
+parts:
+  - title: 合德巷
+    subtitle: 故乡与家族
+    pieces:
+      - {file: 你的名字有故事吗？}
+      - {file: 亲人}
+      - {file: 记忆故乡}
+      - {file: 合德巷记忆碎片}
+      - {file: 记忆中的年味}
+      - {file: 也谈祖父的一副对联}
+      - {file: 粽子的记忆与时尚}
+      - {file: 年后谈过年-不合时令, title: 年后谈过年}
+      - {file: 平和-永定故乡行}
+      - {file: 戏剧性变故-故乡行之二}
+      - {file: 大哥脸有喜色-故乡行之五, tier: B}
+      - {file: 你见过这样的茶几吗？-故乡行之四, tier: B}
+      - {file: 半个世纪前的一张贺卡}
+      - {file: 叔叔安息吧}
+      - {file: 1728, tier: B}
+      - {file: 大年初五合德人家大聚会}
+      - {file: 章弟的烟斗, tier: B}
+      - {file: 喜读七章的新画, tier: B}
+      - {file: 读圈图, tier: B}
+      - {file: 故乡, mode: verse}
+      - {file: 清明诗, mode: verse}
+
+  - title: 保尔班与厦大
+    subtitle: 1946 到 1961
+    pieces:
+      - {file: 五十年前的自画像, images: [/book/images/crops/self-portrait-1953.jpg], written: 1953 年}
+      - {file: 记忆中50年前的母校校园}
+      - {file: 看着五十年前的老照片}
+      - {file: 回想高考}
+      - {file: 青春似梦《保尔班》}
+      - {file: 《保尔班》同学聚会追记}
+      - {file: 我们的《保尔班同学诗文集》出版了, tier: B, fixes: {"她比我预想的要好": "她比我预想的要好"}}
+      - {file: 厦门大学90岁华诞}
+      - {file: 战斗快报, written: 1958 年}
+      - {file: 浆糊画《葫芦》}
+      - {file: 写给自己, mode: verse}
+      - {file: 海滨站岗, mode: verse}
+      - {file: 灯火与飞蛾, mode: verse}
+      - {file: 窘, mode: verse}
+      - {file: 题《牡丹花》日记本扉页, mode: verse}
+      - {file: 春潮, mode: verse}
+      - {file: 还记得么, mode: verse}
+      - {file: 小白鸽, mode: verse}
+      - {file: 珍贵的回忆, mode: verse, written: 2001 年 12 月}
+      - {file: 眺望, mode: verse, tier: B}
+
+  - title: 实验室的年代
+    subtitle: 1961 到 1995
+    pieces:
+      - {file: 实验通讯, written: 1963 年}
+      - {file: 灵谷寺, mode: verse}
+      - {file: 行洛坑之行六首, mode: verse, written: 1964 年 8 月}
+      - {file: 复贺年片, mode: verse}
+      - {file: 我的艰苦岁月, title: 我的艰苦岁月……}
+      - {file: 永远的伴侣, mode: verse}
+      - {file: 天地转}
+      - {file: 中国地质徽记}
+      - {file: 报花, written: 1979 年}
+      - {file: 废纸堆里的字}
+      - {file: 路}
+      - {file: 他山之石}
+      - {file: 山居秋螟}
+      - {file: 夜归鹿门山歌}
+      - {file: 歌舞, tier: B}
+      - {file: 泉州电视台标志应征稿, tier: B}
+      - {file: 《清源山矿泉水》标志设计, tier: B}
+      - {file: 晋江-标志稿, tier: B}
+      - {file: 设计《达顺dsds》标志, tier: B}
+      - {file: 《闽东南》赞歌, mode: verse, tier: B}
+      - {file: 蓦然回首，她在灯火阑珊处-2, title: 蓦然回首，她在灯火阑珊处}
+      - {file: 泉州30年}
+
+  - title: 钢光十一年
+    subtitle: 1995 到 2006
+    pieces:
+      - {file: t铁之歌, mode: verse}
+      - {file: 9年前的一次尴尬之旅}
+      - {file: 印尼泗水、巴厘岛之行}
+      - {file: 《昨日重现》的旋律让我想起15年前-2, title: 《昨日重现》的旋律让我想起15年前, tier: B}
+      - {file: 参加钢光建厂20周年庆}
+      - {file: 重逢钢光}
+      - {file: 临别广州钢光送友字, tier: B}
+      - {file: 初尝签名设计的乐趣}
+      - {file: 为自己写的字}
+      - {file: 不来忽忆君-说标志, tier: B}
+      - {file: 《文璇》-似画似字, tier: B}
+      - {file: 我是谁, mode: verse}
+      - {file: 甲申岁末会友五首, mode: verse, tier: B}
+
+  - title: 五福在家
+    subtitle: 2006 至今
+    pieces:
+      - {file: 网络和阅读让我快乐充实}
+      - {file: 我的第70个生日}
+      - {file: 看我能跑到几时？}
+      - {file: 公园鸟鸣伴晨练, tier: B}
+      - {file: 说买书}
+      - {file: 她帮我在网上买到钟爱的书}
+      - {file: 一本值得一读的书, tier: B}
+      - {file: 读印, tier: B}
+      - {file: 我的躺椅复活了}
+      - {file: 1053}
+      - {file: 夕阳无限好-享受在黄昏}
+      - {file: 回眸之二}
+      - {file: 享受回忆-三个老人的e-mail热线}
+      - {file: 406}
+      - {file: 去年你收到几封信}
+      - {file: 林生来信说信}
+      - {file: 盘点去年事，晚年遇故知；老友情依依，往事常历}
+      - {file: 中秋话博饼-温故同学情, tier: B}
+      - {file: 我书《百福图》}
+      - {file: 我邀百虎-迎春祝福, tier: B}
+      - {file: 老花镜、远视镜及便所餐厅, tier: B}
+      - {file: 我与电脑对手打乒乓, tier: B}
+      - {file: 我心向往-重游北京, tier: B}
+      - {file: 匆匆台湾自由行, tier: B}
+      - {file: 收到生日礼物所思所想}
+      - {file: 别过羊年，便是七九}
+      - {file: 重阳节}
+      - {file: 再见2016！你好2017！}
+      - {file: 闹过花灯年就过了}
+      - {file: 三招免除了我的耄耋之烦恼}
+      - {file: 美丽的曲线-2, title: 美丽的曲线}
+      - {file: 赴新加坡第一天}
+      - {file: 我见到放心石了, tier: B}
+      - {file: 到《小山丛竹》走走}
+      - {file: 用ai豆包让照片动起来}
+
+  - title: 儿女小抽屉
+    subtitle: 三代
+    pieces:
+      - {file: 儿子女儿的小抽屉}
+      - {file: 儿子小抽屉里的诗}
+      - {file: 儿子小抽屉里的篆刻}
+      - gallery: 女儿的画
+        columns: 3
+        files: [女儿的画-1, 女儿的画-2, 女儿的画-3, 女儿的画-4, 女儿的画-5, 女儿的画-6, 女儿的画-7, 女儿的画-8, 女儿的画-9, 女儿的画-10, 女儿的画-11, 女儿的画-12, 女儿的画-13, 女儿的画-14, 女儿的画-15, 女儿的画-16, 女儿的画-17, 女儿的画-18, 女儿的画-19, 女儿的画-20]
+      - {file: 浪花朵朵}
+      - {file: 女儿的青春彩页}
+      - {file: 特殊的礼物}
+      - {file: 新学年伊始的遐想, fixes: {"从新": "重新"}}
+      - {file: 小玻璃罐与小孙女的素描习作, tier: B}
+      - {file: 1614}
+      - {file: 墨墨满月了, tier: B}
+      - {file: 一墨百天记事}
+      - {file: 再见了，泡泡}
+      - {file: 扭来扭去真可爱, mode: verse}
+      - {file: 我要上幼儿园}
+      - {file: 她就想看个究竟, tier: B}
+      - {file: 泡泡学轮滑, tier: B}
+      - {file: 微信140917：童真, tier: B}
+      - {file: 童心世界, tier: B}
+      - {file: 泡泡画爸爸}
+      - {file: 知我者儿也}
+      - {file: 父亲节的惊喜}
+      - {file: 小小孙子的涂鸦之一}
+      - {file: 小孙女孙子的新作}
+      - {file: 姐弟合作画画}
+      - {file: 5岁小孙子的自画像, extra_images: [/book/images/crops/self-portrait-1953.jpg]}
+      - {file: 龙行虎步, tier: B}

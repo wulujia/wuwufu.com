@@ -13,3 +13,7 @@ wp2hugo-output/
 # ffmpeg 2-pass 编码日志
 x265_2pass.log
 x265_2pass.log.*
+
+# 成书工程：编译产物和可重新下载的外链图
+book/out/
+book/images/external/
